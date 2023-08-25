@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+.app-gradient-background {
+    background: linear-gradient(to left, #95959b, #dcd7d6); /* Define your gradient colors here */
+    /* Set other styles for the whole app if needed */
+  }

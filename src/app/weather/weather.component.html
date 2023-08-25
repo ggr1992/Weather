@@ -1,0 +1,24 @@
+
+<div class="search-bar-container m-5">
+  <input class="search-bar" [(ngModel)]="newCity" placeholder="Enter City" />
+  <button class="search-button" type="button" (click)="searchCity()">Search</button>
+</div>
+
+
+<div class="weather-container">
+  
+    <div class="card text-white custom-card m-5" style="max-width: 24rem;">
+        <div class="card-header text-center">
+           <h2>{{city}}</h2>
+           <p><img src="{{iconUrl}}" alt="weather image"></p>
+        </div>
+        <div class="card-body">
+            <p class="card-text">Summary: {{summary}}</p>
+          <p class="card-text">Temperature: {{temperature}} °C</p>
+          <p class="card-text">Feels Like: {{feelsLikeTemperature}} °C</p>
+          <p class="card-text">Humidity {{humidity}}</p>
+          <p class="card-text">Pressure {{pressure}}</p>
+        </div>
+      </div>
+</div>
+
